@@ -9,6 +9,29 @@ A Warhammer 40K-themed AI desktop assistant built with Electron, featuring over 
 - **Personality Modes**: Switch between snarky, helpful, and lazy personalities
 - **Modern UI**: Clean interface with smooth animations
 
+## Setup
+
+1. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Set up OpenRouter API Key:**
+   - Get your API key from [OpenRouter](https://openrouter.ai/)
+   - Run the app and use: `/config apikey YOUR_API_KEY`
+   - Or edit `config.json` directly
+
+3. **Run the App:**
+   ```bash
+   npm start
+   ```
+
+   For development mode:
+   ```bash
+   npm run dev
+   ```
+
+
 ## Architecture
 
 - **Electron**: Desktop app framework
