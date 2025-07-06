@@ -1,6 +1,6 @@
 # AI Assistant - Warhammer 40K Themed Desktop App
 
-A Warhammer 40K-themed AI desktop assistant built with Electron, featuring over 120 modular commands, a snarky customizable personality, and integration with Claude via OpenRouter. Whether you're logging moods, purging to-dos, or receiving brutal roasts — Cogitator Prime is your grimdark co-pilot for daily productivity.
+A Warhammer 40K-themed AI desktop assistant built with Electron, featuring over 120 modular commands, a snarky customizable personality, and integration with Claude/chatgpt via OpenRouter. Whether you're logging moods, purging to-dos, or receiving brutal roasts — Cogitator Prime is your grimdark co-pilot for daily productivity.
 
 ## Features
 
