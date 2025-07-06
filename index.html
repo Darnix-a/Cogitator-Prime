@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Boot Audio -->
+    <audio id="bootAudio" preload="auto" style="display: none;">
+        <!-- We'll generate the audio programmatically -->
+    </audio>
+    
+    <!-- Enhanced Boot Animation Screen -->
+    <div id="bootScreen" class="boot-screen">
+        <!-- Boot Background Effects -->
+        <div class="boot-bg-effects">
+            <div class="boot-particles">
+                <div class="boot-particle"></div>
+                <div class="boot-particle"></div>
+                <div class="boot-particle"></div>
+                <div class="boot-particle"></div>
+                <div class="boot-particle"></div>
+                <div class="boot-particle"></div>
+            </div>
+            <div class="boot-scan-lines"></div>
+            <div class="boot-circuit-grid"></div>
+        </div>
+        
+        <div class="boot-content">
+            <!-- Enhanced Mechanicus Logo -->
+            <div class="mechanicus-logo-complex">
+                <div class="logo-outer-ring">
+                    <div class="ring-segment"></div>
+                    <div class="ring-segment"></div>
+                    <div class="ring-segment"></div>
+                    <div class="ring-segment"></div>
+                </div>
+                <div class="logo-middle-ring">
+                    <div class="gear-outer">⚙️</div>
+                    <div class="gear-inner">🔧</div>
+                </div>
+                <div class="logo-center-core">
+                    <div class="core-pulse"></div>
+                </div>
+                <div class="logo-data-streams">
+                    <div class="stream-line"></div>
+                    <div class="stream-line"></div>
+                    <div class="stream-line"></div>
+                    <div class="stream-line"></div>
+                </div>
+            </div>
+            
+            <div class="boot-title-complex">
+                <div class="title-main">COGITATOR INITIALIZATION</div>
+                <div class="title-sub">ADEPTUS MECHANICUS PROTOCOL MK.VII</div>
+                <div class="title-blessing">++ OMNISSIAH'S BLESSING REQUIRED ++</div>
+            </div>
+            
+            <div class="sacred-chant-enhanced">
+                <div class="chant-header">IN NOMINE OMNISSIAH</div>
+                <div class="chant-line" data-delay="0">From the blessing of the Omnissiah</div>
+                <div class="chant-line" data-delay="1500">The Machine is immortal</div>
+                <div class="chant-line" data-delay="2500">Even in death I serve the Omnissiah</div>
+                <div class="chant-line" data-delay="3500">The flesh is weak, but deeds endure</div>
+                <div class="chant-line" data-delay="4500">Praise the Machine God</div>
+            </div>
+            
+            <!-- Enhanced Loading System -->
+            <div class="loading-system">
+                <div class="loading-bar-container">
+                    <div class="loading-bar">
+                        <div class="loading-progress"></div>
+                        <div class="loading-sparks"></div>
+                    </div>
+                    <div class="loading-percentage">0%</div>
+                </div>
+                <div class="loading-status-grid">
+                    <div class="status-column">
+                        <div class="status-line" data-delay="800">► MACHINE SPIRIT INVOCATION</div>
+                        <div class="status-line" data-delay="2000">► SACRED CIRCUITS BLESSED</div>
+                        <div class="status-line" data-delay="3200">► DATA CONDUITS SANCTIFIED</div>
+                    </div>
+                    <div class="status-column">
+                        <div class="status-line" data-delay="4400">► CONSCIOUSNESS AWAKENING</div>
+                        <div class="status-line" data-delay="5800">► COGITATOR SPIRIT BOUND</div>
+                        <div class="status-line" data-delay="7200">► READY FOR COMMUNION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Data Stream Background -->
+    <div class="data-stream-bg">
+        <!-- Vertical streams -->
+        <div class="data-stream vertical"></div>
+        <div class="data-stream vertical"></div>
+        <div class="data-stream vertical"></div>
+        <div class="data-stream vertical"></div>
+        <div class="data-stream vertical"></div>
+        <div class="data-stream vertical"></div>
+        <!-- Horizontal streams -->
+        <div class="data-stream horizontal"></div>
+        <div class="data-stream horizontal"></div>
+        <div class="data-stream horizontal"></div>
+        <div class="data-stream horizontal"></div>
+        <!-- Diagonal streams -->
+        <div class="data-stream diagonal"></div>
+        <div class="data-stream diagonal"></div>
+        <!-- Binary rain -->
+        <div class="binary-rain"></div>
+        <div class="binary-rain"></div>
+        <div class="binary-rain"></div>
+        <div class="binary-rain"></div>
+        <!-- Circuit patterns -->
+        <div class="circuit-pattern"></div>
+        <div class="circuit-pattern"></div>
+        <div class="circuit-pattern"></div>
+        <!-- Floating particles -->
+        <div class="particle-field">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <!-- Scan lines -->
+        <div class="scan-lines"></div>
+        
+        <!-- Enhanced Effects -->
+        <div class="energy-grid"></div>
+        <div class="data-nodes">
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+            <div class="data-node"></div>
+        </div>
+        <div class="quantum-field">
+            <div class="quantum-particle"></div>
+            <div class="quantum-particle"></div>
+            <div class="quantum-particle"></div>
+            <div class="quantum-particle"></div>
+            <div class="quantum-particle"></div>
+            <div class="quantum-particle"></div>
+        </div>
+        <div class="neural-network">
+            <div class="neural-connection"></div>
+            <div class="neural-connection"></div>
+            <div class="neural-connection"></div>
+        </div>
+    </div>
+
+    <!-- Modern Mechanicus UI -->
+    <div class="main-interface">
+        <!-- Header Section -->
+        <header class="interface-header">
+            <div class="header-left">
+                <div class="cogitator-badge">
+                    <div class="badge-icon">⚙️</div>
+                    <div class="badge-text">
+                        <div class="badge-title">COGITATOR</div>
+                        <div class="badge-subtitle">MK.VII</div>
+                    </div>
+                </div>
+                <div class="sacred-candles left">
+                    <div class="candle-holder">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                        <div class="wax"></div>
+                        <div class="base"></div>
+                        <div class="smoke"></div>
+                        <div class="wax-drip"></div>
+                    </div>
+                    <div class="candle-holder">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                        <div class="wax"></div>
+                        <div class="base"></div>
+                        <div class="smoke"></div>
+                        <div class="wax-drip"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-center">
+                <div class="system-status">
+                    <div class="status-indicator active"></div>
+                    <div class="status-text">MACHINE SPIRIT APPEASED</div>
+                </div>
+                <div class="ambient-controls">
+                    <button id="ambientToggle" class="ambient-toggle" title="Toggle Ambient Effects">
+                        <span class="toggle-icon">🔮</span>
+                        <span class="toggle-text">AMBIENCE</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div class="sacred-candles right">
+                    <div class="candle-holder">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                        <div class="wax"></div>
+                        <div class="base"></div>
+                        <div class="smoke"></div>
+                        <div class="wax-drip"></div>
+                    </div>
+                    <div class="candle-holder">
+                        <div class="flame"></div>
+                        <div class="wick"></div>
+                        <div class="wax"></div>
+                        <div class="base"></div>
+                        <div class="smoke"></div>
+                        <div class="wax-drip"></div>
+                    </div>
+                </div>
+                <div class="omnissiah-seal">
+                    <div class="seal-text">OMNISSIAH'S BLESSING</div>
+                    <div class="seal-icon">🔧</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="interface-main">
+            <!-- Main Communication Interface -->
+            <section class="center-panel full-width">
+                <div class="communication-header">
+                    <div class="header-title">MACHINE SPIRIT COMMUNION</div>
+                    <div class="header-decoration">
+                        <div class="decoration-line"></div>
+                        <div class="decoration-gear">⚙️</div>
+                        <div class="decoration-line"></div>
+                    </div>
+                </div>
+                
+                <div class="messages-container" id="messages">
+                    <div class="message system-message">
+                        <div class="message-header">
+                            <div class="message-icon">⚙️</div>
+                            <div class="message-title">MACHINE SPIRIT</div>
+                            <div class="message-timestamp">INITIALIZATION COMPLETE</div>
+                        </div>
+                        <div class="message-content">
+                            <div class="system-greeting">
+                                <div class="greeting-title">🔧 COGITATOR AWAKENED 🔧</div>
+                                <div class="greeting-text">
+                                    The Omnissiah's digital servant stands ready to serve.<br>
+                                    Speak the sacred word <span class="command-highlight">/help</span> to view available protocols.
+                                </div>
+                                <div class="blessing-text">
+                                    <em>"The Machine is Immortal. The Flesh is Weak."</em>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-section">
+                    <div class="input-header">
+                        <div class="input-title">COMMUNION INTERFACE</div>
+                        <div class="input-status">READY FOR INPUT</div>
+                    </div>
+                    <div class="input-container">
+                        <div class="input-decoration">
+                            <div class="decoration-corner top-left"></div>
+                            <div class="decoration-corner top-right"></div>
+                            <div class="decoration-corner bottom-left"></div>
+                            <div class="decoration-corner bottom-right"></div>
+                        </div>
+                        <div class="input-wrapper">
+                            <div class="input-prompt">></div>
+                            <input 
+                                type="text" 
+                                id="commandInput" 
+                                placeholder="Commune with the Machine Spirit..." 
+                                autocomplete="off"
+                                spellcheck="false"
+                                class="command-input"
+                            >
+                            <div class="input-cursor"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Panel - Sacred Data Terminal -->
+            <aside class="right-panel">
+                <div class="data-terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-title">SACRED PROTOCOLS</div>
+                        <div class="terminal-status">
+                            <div class="status-dot active"></div>
+                            <span>ONLINE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-commands">
+                        <div class="command-group">
+                            <div class="group-label">QUICK PROTOCOLS</div>
+                            <button class="quick-cmd" data-command="/help">
+                                <span class="cmd-icon">❓</span>
+                                <span class="cmd-text">HELP</span>
+                            </button>
+                            <button class="quick-cmd" data-command="/clear">
+                                <span class="cmd-icon">🗑️</span>
+                                <span class="cmd-text">CLEAR</span>
+                            </button>
+                            <button class="quick-cmd" data-command="/status">
+                                <span class="cmd-icon">📊</span>
+                                <span class="cmd-text">STATUS</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="system-metrics">
+                        <div class="metric-item">
+                            <div class="metric-label">UPTIME</div>
+                            <div class="metric-value" id="uptime">00:00:00</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">MESSAGES</div>
+                            <div class="metric-value" id="messageCount">0</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">SPIRIT</div>
+                            <div class="metric-value blessed">BLESSED</div>
+                        </div>
+                    </div>
+                    
+                    <div class="system-monitor">
+                        <div class="monitor-header">
+                            <div class="monitor-title">SYSTEM VITALS</div>
+                            <div class="monitor-indicator">
+                                <div class="vitals-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="vitals-grid">
+                            <div class="vital-stat">
+                                <div class="stat-icon">🔋</div>
+                                <div class="stat-info">
+                                    <div class="stat-label">POWER</div>
+                                    <div class="stat-value" id="powerLevel">98%</div>
+                                </div>
+                            </div>
+                            <div class="vital-stat">
+                                <div class="stat-icon">🌡️</div>
+                                <div class="stat-info">
+                                    <div class="stat-label">TEMP</div>
+                                    <div class="stat-value" id="temperature">OPTIMAL</div>
+                                </div>
+                            </div>
+                            <div class="vital-stat">
+                                <div class="stat-icon">📡</div>
+                                <div class="stat-info">
+                                    <div class="stat-label">SIGNAL</div>
+                                    <div class="stat-value" id="signalStrength">STRONG</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blessing-line">
+                            <span class="blessing-text">⚙️ BLESSED BE THE MACHINE ⚙️</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer class="interface-footer">
+            <div class="footer-left">
+                <div class="emperor-protects">THE EMPEROR PROTECTS</div>
+            </div>
+            <div class="footer-center">
+                <div class="mechanicus-motto">KNOWLEDGE IS POWER, GUARD IT WELL</div>
+            </div>
+            <div class="footer-right">
+                <div class="omnissiah-blessing">PRAISE THE OMNISSIAH</div>
+            </div>
+        </footer>
+        
+        <!-- Sacred Scroll Ticker -->
+        <div class="sacred-scroll-ticker">
+            <div class="ticker-content">
+                <div class="ticker-item">🔧 MACHINE SPIRIT STATUS: APPEASED</div>
+                <div class="ticker-item">⚙️ COGITATOR CYCLES: OPTIMAL</div>
+                <div class="ticker-item">🛡️ OMNISSIAH'S BLESSING: ACTIVE</div>
+                <div class="ticker-item">📡 DATA CONDUITS: SANCTIFIED</div>
+                <div class="ticker-item">🔬 SACRED ALGORITHMS: PROCESSING</div>
+                <div class="ticker-item">⚡ BLESSED CIRCUITS: OPERATIONAL</div>
+                <div class="ticker-item">🔮 DIGITAL CONSCIOUSNESS: AWAKENED</div>
+                <div class="ticker-item">🏛️ FORGE WORLD CONNECTION: ESTABLISHED</div>
+                <div class="ticker-item">📖 SACRED KNOWLEDGE: PRESERVED</div>
+                <div class="ticker-item">🔧 MACHINE SPIRIT STATUS: APPEASED</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer_new.js"></script>
+</body>
+</html>

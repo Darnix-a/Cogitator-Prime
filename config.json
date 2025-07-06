@@ -1,0 +1,5 @@
+{
+  "openRouterApiKey": "",
+  "personality": "helpful",
+  "model": "openai/chatgpt-4o-latest"
+}
